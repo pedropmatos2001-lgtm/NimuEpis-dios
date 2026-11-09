@@ -1,0 +1,68 @@
+{
+  "data": {
+    "series": { "id": 81797, "name": "One Piece" },
+    "episodes": [
+      {
+        "id": 179657,
+        "seriesId": 81797,
+        "seasonNumber": 1,
+        "number": 1,
+        "absoluteNumber": 1,
+        "aired": "1999-10-20",
+        "name": "I'm Luffy! The Man Who Will Become the Pirate King!",
+        "overview": "Monkey D. Luffy sets out to become King of the Pirates.",
+        "image": "/banners/episodes/81797/179657.jpg",
+        "runtime": 24
+      },
+      {
+        "id": 179658,
+        "seriesId": 81797,
+        "seasonNumber": 1,
+        "number": 2,
+        "absoluteNumber": 2,
+        "aired": "1999-11-17",
+        "name": "The Great Swordsman Appears! Pirate Hunter Roronoa Zoro",
+        "overview": "Luffy tries to recruit the infamous bounty hunter Zoro.",
+        "image": "https://artworks.thetvdb.com/banners/episodes/81797/179658.jpg",
+        "runtime": 24
+      },
+      {
+        "id": 179718,
+        "seriesId": 81797,
+        "seasonNumber": 2,
+        "number": 1,
+        "absoluteNumber": 62,
+        "aired": "2001-01-14",
+        "name": "Setting Off with a Smile! Farewell, Hometown Cocoyashi Village!",
+        "overview": "The crew enters the Grand Line at last.",
+        "image": "banners/episodes/81797/179718.jpg",
+        "runtime": 24
+      },
+      {
+        "id": 900001,
+        "seriesId": 81797,
+        "seasonNumber": 0,
+        "number": 5,
+        "absoluteNumber": null,
+        "aired": "2000-12-20",
+        "name": "Special: Adventure in the Ocean's Navel",
+        "overview": "A standalone TV special with no place on the absolute timeline.",
+        "image": "/banners/episodes/81797/900001.jpg",
+        "runtime": 60
+      },
+      {
+        "id": 900002,
+        "seriesId": 81797,
+        "seasonNumber": 0,
+        "number": 6,
+        "absoluteNumber": 999,
+        "aired": "2005-06-12",
+        "name": "Numbered Special: Take Aim! The Pirate Baseball King",
+        "overview": "A special TVDB did place on the absolute timeline.",
+        "image": "",
+        "runtime": 60
+      }
+    ]
+  },
+  "links": { "prev": null, "self": "series/81797/episodes/default?page=0", "next": null, "total_items": 5, "page_size": 500 }
+}

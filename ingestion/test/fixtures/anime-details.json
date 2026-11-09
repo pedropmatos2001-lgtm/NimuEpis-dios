@@ -1,0 +1,94 @@
+{
+  "sousou-no-frieren-2nd-season": {
+    "id": "a1b2c3d4",
+    "title": "Sousou no Frieren Season 2",
+    "route": "sousou-no-frieren-2nd-season",
+    "premier": "2026-07-04T00:00:00Z",
+    "subPremier": "2026-07-04T16:00:00Z",
+    "dubPremier": "2026-07-18T20:00:00Z",
+    "month": "July",
+    "year": 2026,
+    "season": { "title": "Summer 2026", "year": "2026", "season": "Summer", "route": "summer-2026" },
+    "episodes": 28,
+    "lengthMin": 24,
+    "status": "Ongoing",
+    "description": "<p>Decades after the party of heroes defeated the Demon King, the elf mage Frieren continues her journey to understand humanity.</p><p>Second season.</p>",
+    "genres": [
+      { "name": "Adventure", "route": "adventure" },
+      { "name": "Fantasy", "route": "fantasy" }
+    ],
+    "studios": [{ "name": "Madhouse", "route": "madhouse" }],
+    "sources": [{ "name": "Manga", "route": "manga" }],
+    "mediaTypes": [{ "name": "TV", "route": "tv" }],
+    "stats": {
+      "averageScore": 91.34,
+      "ratingCount": 1250,
+      "trackedCount": 52000,
+      "trackedRating": 9.13,
+      "colorLightMode": "#7C9F6B",
+      "colorDarkMode": "#A8C69A"
+    },
+    "names": {
+      "romaji": "Sousou no Frieren 2nd Season",
+      "english": "Frieren: Beyond Journey's End Season 2",
+      "native": "葬送のフリーレン 第2期",
+      "abbreviation": "Frieren S2",
+      "synonyms": ["Frieren at the Funeral 2"]
+    },
+    "relations": { "sequels": [], "prequels": ["sousou-no-frieren"] },
+    "websites": {
+      "official": "frieren-anime.jp",
+      "mal": "myanimelist.net/anime/52991",
+      "aniList": "anilist.co/anime/154587",
+      "kitsu": "kitsu.app/anime/46474",
+      "animePlanet": "anime-planet.com/anime/frieren-beyond-journeys-end-season-2",
+      "anidb": "anidb.net/anime/17617",
+      "crunchyroll": "www.crunchyroll.com/series/GDKHZEJ0K/frieren-beyond-journeys-end"
+    },
+    "createdAt": "2025-11-02T10:00:00Z",
+    "updatedAt": "2026-07-28T09:00:00Z",
+    "imageVersionRoute": "sousou-no-frieren-2nd-season-v2.webp"
+  },
+  "kingdom-6th-season": {
+    "id": "e5f6a7b8",
+    "title": "Kingdom Season 6",
+    "route": "kingdom-6th-season",
+    "month": "July",
+    "year": 2026,
+    "season": { "title": "Summer 2026", "year": "2026", "season": "Summer", "route": "summer-2026" },
+    "episodes": 26,
+    "lengthMin": 24,
+    "status": "Delayed",
+    "description": "<p>Sixth season of <b>Kingdom</b>.</p>",
+    "genres": [
+      { "name": "Action", "route": "action" },
+      { "name": "Historical", "route": "historical" }
+    ],
+    "studios": [
+      { "name": "Pierrot", "route": "pierrot" },
+      { "name": "Studio Signpost", "route": "studio-signpost" }
+    ],
+    "sources": [{ "name": "Manga", "route": "manga" }],
+    "mediaTypes": [{ "name": "TV", "route": "tv" }],
+    "stats": {
+      "averageScore": 0,
+      "ratingCount": 0,
+      "trackedCount": 9000,
+      "trackedRating": 0,
+      "colorLightMode": "not-a-color",
+      "colorDarkMode": ""
+    },
+    "names": {
+      "romaji": "Kingdom 6th Season",
+      "english": "",
+      "native": "キングダム 第6シリーズ",
+      "abbreviation": "",
+      "synonyms": []
+    },
+    "websites": {
+      "official": "kingdom-anime.com",
+      "mal": "https://myanimelist.net/anime/60543"
+    },
+    "imageVersionRoute": "kingdom-6th-season.webp"
+  }
+}

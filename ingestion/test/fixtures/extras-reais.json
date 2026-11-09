@@ -1,0 +1,1219 @@
+[
+ {
+  "expected": "Music",
+  "row": {
+   "mal_id": 51321,
+   "title": "Echo",
+   "media_type": "Special",
+   "animeschedule_route": null,
+   "popularity": null
+  },
+  "animeschedule": null,
+  "manami": {
+   "title": "Echo",
+   "type": "SPECIAL",
+   "episodes": 1,
+   "duration": {
+    "value": 180,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "music"
+   ]
+  }
+ },
+ {
+  "expected": "PV",
+  "row": {
+   "mal_id": 36577,
+   "title": "Dungeon Meshi PVs",
+   "media_type": "Special",
+   "animeschedule_route": null,
+   "popularity": null
+  },
+  "animeschedule": null,
+  "manami": {
+   "title": "Dungeon Meshi PVs",
+   "type": "SPECIAL",
+   "episodes": 2,
+   "duration": {
+    "value": 58,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "comedy"
+   ]
+  }
+ },
+ {
+  "expected": "PV",
+  "row": {
+   "mal_id": 40982,
+   "title": "Fate/strange Fake PV",
+   "media_type": "Special",
+   "animeschedule_route": null,
+   "popularity": null
+  },
+  "animeschedule": [
+   "Special"
+  ],
+  "manami": {
+   "title": "Fate/strange Fake PV",
+   "type": "SPECIAL",
+   "episodes": 1,
+   "duration": {
+    "value": 31,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "music",
+    "promotional"
+   ]
+  }
+ },
+ {
+  "expected": "PV",
+  "row": {
+   "mal_id": 34454,
+   "title": "Granblue Fantasy CMs",
+   "media_type": "Special",
+   "animeschedule_route": null,
+   "popularity": null
+  },
+  "animeschedule": null,
+  "manami": {
+   "title": "Granblue Fantasy CMs",
+   "type": "SPECIAL",
+   "episodes": 16,
+   "duration": {
+    "value": 28,
+    "unit": "SECONDS"
+   },
+   "tags": []
+  }
+ },
+ {
+  "expected": "PV",
+  "row": {
+   "mal_id": 52132,
+   "title": "Boogiepop and Others: Promotional Trailer",
+   "media_type": "ONA",
+   "animeschedule_route": null,
+   "popularity": null
+  },
+  "animeschedule": null,
+  "manami": {
+   "title": "Boogiepop and Others: Promotional Trailer",
+   "type": "ONA",
+   "episodes": 1,
+   "duration": {
+    "value": 60,
+    "unit": "SECONDS"
+   },
+   "tags": []
+  }
+ },
+ {
+  "expected": "Music",
+  "row": {
+   "mal_id": 33106,
+   "title": "Love Live! μ's Final Love Live! Opening Animation",
+   "media_type": "Special",
+   "animeschedule_route": null,
+   "popularity": null
+  },
+  "animeschedule": [
+   "Special"
+  ],
+  "manami": {
+   "title": "Love Live! μ's Final Love Live! Opening Animation",
+   "type": "SPECIAL",
+   "episodes": 1,
+   "duration": {
+    "value": 300,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "idol",
+    "music",
+    "short episodes"
+   ]
+  }
+ },
+ {
+  "expected": "Music",
+  "row": {
+   "mal_id": 55986,
+   "title": "Na mo Naki Nanimo Kamo",
+   "media_type": "Special",
+   "animeschedule_route": null,
+   "popularity": null
+  },
+  "animeschedule": null,
+  "manami": {
+   "title": "Na mo Naki Nanimo Kamo",
+   "type": "SPECIAL",
+   "episodes": 1,
+   "duration": {
+    "value": 240,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "music"
+   ]
+  }
+ },
+ {
+  "expected": "Music",
+  "row": {
+   "mal_id": 9930,
+   "title": "Snow Halation",
+   "media_type": "Special",
+   "animeschedule_route": null,
+   "popularity": null
+  },
+  "animeschedule": [
+   "Music"
+  ],
+  "manami": {
+   "title": "Snow Halation",
+   "type": "SPECIAL",
+   "episodes": 1,
+   "duration": {
+    "value": 360,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "band",
+    "idol",
+    "music"
+   ]
+  }
+ },
+ {
+  "expected": "Music",
+  "row": {
+   "mal_id": 52846,
+   "title": "Tot Musica",
+   "media_type": "Special",
+   "animeschedule_route": null,
+   "popularity": null
+  },
+  "animeschedule": [
+   "Music"
+  ],
+  "manami": {
+   "title": "Tot Musica",
+   "type": "SPECIAL",
+   "episodes": 1,
+   "duration": {
+    "value": 180,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "idol",
+    "music"
+   ]
+  }
+ },
+ {
+  "expected": "Music",
+  "row": {
+   "mal_id": 40477,
+   "title": "Curry Meshi x Zombieland Saga",
+   "media_type": "Special",
+   "animeschedule_route": null,
+   "popularity": null
+  },
+  "animeschedule": [
+   "ONA"
+  ],
+  "manami": {
+   "title": "Curry Meshi x Zombieland Saga",
+   "type": "SPECIAL",
+   "episodes": 1,
+   "duration": {
+    "value": 31,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "comedy",
+    "idol",
+    "music",
+    "promotional"
+   ]
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 52034,
+   "title": "[Oshi no Ko]",
+   "media_type": "TV",
+   "animeschedule_route": null,
+   "popularity": 2123
+  },
+  "animeschedule": [
+   "TV"
+  ],
+  "manami": {
+   "title": "[Oshi no Ko]",
+   "type": "TV",
+   "episodes": 11,
+   "duration": {
+    "value": 1800,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "band",
+    "comedy",
+    "idol",
+    "music"
+   ]
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 55791,
+   "title": "[Oshi no Ko] 2nd Season",
+   "media_type": "TV",
+   "animeschedule_route": null,
+   "popularity": 1769
+  },
+  "animeschedule": [
+   "TV"
+  ],
+  "manami": {
+   "title": "[Oshi no Ko] 2nd Season",
+   "type": "TV",
+   "episodes": 13,
+   "duration": {
+    "value": 1500,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "comedy",
+    "idol",
+    "music"
+   ]
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 39533,
+   "title": "Given",
+   "media_type": "TV",
+   "animeschedule_route": null,
+   "popularity": 390
+  },
+  "animeschedule": [
+   "TV"
+  ],
+  "manami": {
+   "title": "Given",
+   "type": "TV",
+   "episodes": 11,
+   "duration": {
+    "value": 1320,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "band",
+    "comedy",
+    "music"
+   ]
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 40421,
+   "title": "Given Movie 1",
+   "media_type": "Movie",
+   "animeschedule_route": null,
+   "popularity": null
+  },
+  "animeschedule": [
+   "Movie"
+  ],
+  "manami": {
+   "title": "Given Movie 1",
+   "type": "MOVIE",
+   "episodes": 1,
+   "duration": {
+    "value": 3540,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "band",
+    "comedy",
+    "music"
+   ]
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 49053,
+   "title": "Given: Uragawa no Sonzai",
+   "media_type": "OVA",
+   "animeschedule_route": null,
+   "popularity": null
+  },
+  "animeschedule": [
+   "OVA"
+  ],
+  "manami": {
+   "title": "Given: Uragawa no Sonzai",
+   "type": "OVA",
+   "episodes": 1,
+   "duration": {
+    "value": 1320,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "band",
+    "music"
+   ]
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 47917,
+   "title": "Bocchi the Rock!",
+   "media_type": "TV",
+   "animeschedule_route": null,
+   "popularity": 1229
+  },
+  "animeschedule": [
+   "TV"
+  ],
+  "manami": {
+   "title": "Bocchi the Rock!",
+   "type": "TV",
+   "episodes": 12,
+   "duration": {
+    "value": 1380,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "band",
+    "comedy",
+    "music"
+   ]
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 55357,
+   "title": "Bocchi the Rock! Movie",
+   "media_type": "Movie",
+   "animeschedule_route": null,
+   "popularity": null
+  },
+  "animeschedule": [
+   "Movie"
+  ],
+  "manami": {
+   "title": "Bocchi the Rock! Movie",
+   "type": "MOVIE",
+   "episodes": 2,
+   "duration": {
+    "value": 4920,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "band",
+    "comedy",
+    "music"
+   ]
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 59806,
+   "title": "Bocchi the Rock!: Gotou Futari no Onee-chan Kansatsu Nikki",
+   "media_type": "Special",
+   "animeschedule_route": null,
+   "popularity": null
+  },
+  "animeschedule": null,
+  "manami": {
+   "title": "Bocchi the Rock!: Gotou Futari no Onee-chan Kansatsu Nikki",
+   "type": "SPECIAL",
+   "episodes": 1,
+   "duration": {
+    "value": 1380,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "comedy",
+    "music"
+   ]
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 15051,
+   "title": "Love Live! School Idol Project",
+   "media_type": "TV",
+   "animeschedule_route": null,
+   "popularity": null
+  },
+  "animeschedule": [
+   "TV"
+  ],
+  "manami": {
+   "title": "Love Live! School Idol Project",
+   "type": "TV",
+   "episodes": 13,
+   "duration": {
+    "value": 1380,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "band",
+    "comedy",
+    "idol",
+    "music"
+   ]
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 32526,
+   "title": "Love Live! Sunshine!!",
+   "media_type": "TV",
+   "animeschedule_route": null,
+   "popularity": null
+  },
+  "animeschedule": [
+   "TV"
+  ],
+  "manami": {
+   "title": "Love Live! Sunshine!!",
+   "type": "TV",
+   "episodes": 13,
+   "duration": {
+    "value": 1440,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "comedy",
+    "idol",
+    "music"
+   ]
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 36473,
+   "title": "Love Live! Sunshine!! Recap",
+   "media_type": "Special",
+   "animeschedule_route": null,
+   "popularity": null
+  },
+  "animeschedule": null,
+  "manami": {
+   "title": "Love Live! Sunshine!! Recap",
+   "type": "SPECIAL",
+   "episodes": 1,
+   "duration": {
+    "value": 1380,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "idol",
+    "music"
+   ]
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 49988,
+   "title": "Liella no Uta",
+   "media_type": "Special",
+   "animeschedule_route": null,
+   "popularity": null
+  },
+  "animeschedule": [
+   "TV Short"
+  ],
+  "manami": {
+   "title": "Liella no Uta",
+   "type": "SPECIAL",
+   "episodes": 12,
+   "duration": {
+    "value": 60,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "idol",
+    "music",
+    "short episodes"
+   ]
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 42753,
+   "title": "Love Live! μ's Go→Go! LoveLive! 2015: Dream Sensation!",
+   "media_type": "Special",
+   "animeschedule_route": null,
+   "popularity": null
+  },
+  "animeschedule": null,
+  "manami": {
+   "title": "Love Live! μ's Go→Go! LoveLive! 2015: Dream Sensation!",
+   "type": "SPECIAL",
+   "episodes": 4,
+   "duration": {
+    "value": 480,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "comedy",
+    "idol",
+    "music",
+    "short episodes"
+   ]
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 60644,
+   "title": "Love Live! Superstar!! 3rd Season (TV Special)",
+   "media_type": "Special",
+   "animeschedule_route": null,
+   "popularity": null
+  },
+  "animeschedule": null,
+  "manami": {
+   "title": "Love Live! Superstar!! 3rd Season (TV Special)",
+   "type": "SPECIAL",
+   "episodes": 6,
+   "duration": {
+    "value": 60,
+    "unit": "SECONDS"
+   },
+   "tags": []
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 5680,
+   "title": "K-On!",
+   "media_type": "TV",
+   "animeschedule_route": null,
+   "popularity": 654
+  },
+  "animeschedule": [
+   "TV"
+  ],
+  "manami": {
+   "title": "K-On!",
+   "type": "TV",
+   "episodes": 13,
+   "duration": {
+    "value": 1440,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "band",
+    "comedy",
+    "music"
+   ]
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 27989,
+   "title": "Hibike! Euphonium",
+   "media_type": "TV",
+   "animeschedule_route": null,
+   "popularity": 442
+  },
+  "animeschedule": [
+   "TV"
+  ],
+  "manami": {
+   "title": "Hibike! Euphonium",
+   "type": "TV",
+   "episodes": 13,
+   "duration": {
+    "value": 1380,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "band",
+    "music"
+   ]
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 37435,
+   "title": "Carole & Tuesday",
+   "media_type": "TV",
+   "animeschedule_route": null,
+   "popularity": null
+  },
+  "animeschedule": [
+   "TV"
+  ],
+  "manami": {
+   "title": "Carole & Tuesday",
+   "type": "TV",
+   "episodes": 24,
+   "duration": {
+    "value": 1320,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "band",
+    "comedy",
+    "idol",
+    "music",
+    "parody"
+   ]
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 23273,
+   "title": "Shigatsu wa Kimi no Uso",
+   "media_type": "TV",
+   "animeschedule_route": null,
+   "popularity": 1337
+  },
+  "animeschedule": [
+   "TV"
+  ],
+  "manami": {
+   "title": "Shigatsu wa Kimi no Uso",
+   "type": "TV",
+   "episodes": 22,
+   "duration": {
+    "value": 1320,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "comedy",
+    "music"
+   ]
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 55102,
+   "title": "Girls Band Cry",
+   "media_type": "TV",
+   "animeschedule_route": null,
+   "popularity": 489
+  },
+  "animeschedule": [
+   "TV"
+  ],
+  "manami": {
+   "title": "Girls Band Cry",
+   "type": "TV",
+   "episodes": 13,
+   "duration": {
+    "value": 1380,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "band",
+    "music"
+   ]
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 10321,
+   "title": "Uta no☆Prince-sama♪ Maji Love 1000%",
+   "media_type": "TV",
+   "animeschedule_route": null,
+   "popularity": null
+  },
+  "animeschedule": [
+   "TV"
+  ],
+  "manami": {
+   "title": "Uta no☆Prince-sama♪ Maji Love 1000%",
+   "type": "TV",
+   "episodes": 13,
+   "duration": {
+    "value": 1500,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "comedy",
+    "idol",
+    "music"
+   ]
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 37976,
+   "title": "Zombieland Saga",
+   "media_type": "TV",
+   "animeschedule_route": null,
+   "popularity": 597
+  },
+  "animeschedule": [
+   "TV"
+  ],
+  "manami": {
+   "title": "Zombieland Saga",
+   "type": "TV",
+   "episodes": 12,
+   "duration": {
+    "value": 1380,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "comedy",
+    "idol",
+    "music",
+    "parody"
+   ]
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 15125,
+   "title": "Teekyuu",
+   "media_type": "TV",
+   "animeschedule_route": null,
+   "popularity": null
+  },
+  "animeschedule": [
+   "TV Short"
+  ],
+  "manami": {
+   "title": "Teekyuu",
+   "type": "TV",
+   "episodes": 12,
+   "duration": {
+    "value": 120,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "comedy",
+    "parody",
+    "short episodes"
+   ]
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 5060,
+   "title": "Hetalia Axis Powers",
+   "media_type": "ONA",
+   "animeschedule_route": null,
+   "popularity": null
+  },
+  "animeschedule": [
+   "ONA"
+  ],
+  "manami": {
+   "title": "Hetalia Axis Powers",
+   "type": "ONA",
+   "episodes": 52,
+   "duration": {
+    "value": 300,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "comedy",
+    "parody",
+    "short episodes"
+   ]
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 35330,
+   "title": "Poputepipikku",
+   "media_type": "TV",
+   "animeschedule_route": null,
+   "popularity": null
+  },
+  "animeschedule": [
+   "TV"
+  ],
+  "manami": {
+   "title": "Poputepipikku",
+   "type": "TV",
+   "episodes": 12,
+   "duration": {
+    "value": 660,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "comedy",
+    "parody"
+   ]
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 38472,
+   "title": "Isekai Quartet",
+   "media_type": "TV",
+   "animeschedule_route": null,
+   "popularity": 617
+  },
+  "animeschedule": [
+   "TV Short"
+  ],
+  "manami": {
+   "title": "Isekai Quartet",
+   "type": "TV",
+   "episodes": 12,
+   "duration": {
+    "value": 660,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "comedy",
+    "parody",
+    "short episodes"
+   ]
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 30721,
+   "title": "Hacka Doll The Animation",
+   "media_type": "TV",
+   "animeschedule_route": null,
+   "popularity": null
+  },
+  "animeschedule": [
+   "TV Short"
+  ],
+  "manami": {
+   "title": "Hacka Doll The Animation",
+   "type": "TV",
+   "episodes": 13,
+   "duration": {
+    "value": 420,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "comedy",
+    "idol",
+    "parody",
+    "short episodes"
+   ]
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 17082,
+   "title": "Aiura",
+   "media_type": "TV",
+   "animeschedule_route": null,
+   "popularity": null
+  },
+  "animeschedule": [
+   "TV Short"
+  ],
+  "manami": {
+   "title": "Aiura",
+   "type": "TV",
+   "episodes": 12,
+   "duration": {
+    "value": 240,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "comedy",
+    "short episodes"
+   ]
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 38000,
+   "title": "Kimetsu no Yaiba",
+   "media_type": "TV",
+   "animeschedule_route": null,
+   "popularity": 2728
+  },
+  "animeschedule": [
+   "TV"
+  ],
+  "manami": {
+   "title": "Kimetsu no Yaiba",
+   "type": "TV",
+   "episodes": 26,
+   "duration": {
+    "value": 1380,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "comedy"
+   ]
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 56885,
+   "title": "Sousou no Frieren: ●● no Mahou",
+   "media_type": "ONA",
+   "animeschedule_route": null,
+   "popularity": null
+  },
+  "animeschedule": [
+   "ONA"
+  ],
+  "manami": {
+   "title": "Sousou no Frieren: ●● no Mahou",
+   "type": "ONA",
+   "episodes": 24,
+   "duration": {
+    "value": 60,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "comedy",
+    "short episodes"
+   ]
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 31374,
+   "title": "Shingeki! Kyojin Chuugakkou",
+   "media_type": "TV",
+   "animeschedule_route": null,
+   "popularity": null
+  },
+  "animeschedule": [
+   "TV"
+  ],
+  "manami": {
+   "title": "Shingeki! Kyojin Chuugakkou",
+   "type": "TV",
+   "episodes": 12,
+   "duration": {
+    "value": 1020,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "band",
+    "comedy",
+    "parody"
+   ]
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 52299,
+   "title": "Ore dake Level Up na Ken",
+   "media_type": "TV",
+   "animeschedule_route": null,
+   "popularity": 3270
+  },
+  "animeschedule": [
+   "TV"
+  ],
+  "manami": {
+   "title": "Ore dake Level Up na Ken",
+   "type": "TV",
+   "episodes": 12,
+   "duration": {
+    "value": 1380,
+    "unit": "SECONDS"
+   },
+   "tags": []
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 58567,
+   "title": "Ore dake Level Up na Ken Season 2: Arise from the Shadow",
+   "media_type": "TV",
+   "animeschedule_route": null,
+   "popularity": 2936
+  },
+  "animeschedule": [
+   "TV"
+  ],
+  "manami": {
+   "title": "Ore dake Level Up na Ken Season 2: Arise from the Shadow",
+   "type": "TV",
+   "episodes": 13,
+   "duration": {
+    "value": 1380,
+    "unit": "SECONDS"
+   },
+   "tags": []
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 2385,
+   "title": "One Piece: Jango no Dance Carnival",
+   "media_type": "Special",
+   "animeschedule_route": null,
+   "popularity": null
+  },
+  "animeschedule": [
+   "Special"
+  ],
+  "manami": {
+   "title": "One Piece: Jango no Dance Carnival",
+   "type": "SPECIAL",
+   "episodes": 1,
+   "duration": {
+    "value": 360,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "comedy",
+    "music",
+    "short episodes"
+   ]
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 6361,
+   "title": "ef: A Tale of Memories. - Prologue",
+   "media_type": "Special",
+   "animeschedule_route": null,
+   "popularity": null
+  },
+  "animeschedule": [
+   "Special"
+  ],
+  "manami": {
+   "title": "ef: A Tale of Memories. - Prologue",
+   "type": "SPECIAL",
+   "episodes": 1,
+   "duration": {
+    "value": 240,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "comedy",
+    "music",
+    "short episodes"
+   ]
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 10122,
+   "title": "Kowarekake no Orgel Special",
+   "media_type": "Special",
+   "animeschedule_route": null,
+   "popularity": null
+  },
+  "animeschedule": [
+   "Special"
+  ],
+  "manami": {
+   "title": "Kowarekake no Orgel Special",
+   "type": "SPECIAL",
+   "episodes": 1,
+   "duration": {
+    "value": 480,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "music",
+    "short episodes"
+   ]
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 12893,
+   "title": "Danshi Koukousei no Nichijou Specials",
+   "media_type": "Special",
+   "animeschedule_route": null,
+   "popularity": null
+  },
+  "animeschedule": [
+   "Special"
+  ],
+  "manami": {
+   "title": "Danshi Koukousei no Nichijou Specials",
+   "type": "SPECIAL",
+   "episodes": 6,
+   "duration": {
+    "value": 180,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "comedy",
+    "short episodes"
+   ]
+  }
+ },
+ {
+  "expected": null,
+  "row": {
+   "mal_id": 37999,
+   "title": "Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen",
+   "media_type": "TV",
+   "animeschedule_route": null,
+   "popularity": 1736
+  },
+  "animeschedule": [
+   "TV"
+  ],
+  "manami": {
+   "title": "Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen",
+   "type": "TV",
+   "episodes": 12,
+   "duration": {
+    "value": 1500,
+    "unit": "SECONDS"
+   },
+   "tags": [
+    "comedy",
+    "parody"
+   ]
+  }
+ }
+]

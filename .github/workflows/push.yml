@@ -1,0 +1,83 @@
+# =============================================================================
+# Nimu — Web Push sender (scheduled GitHub Action)
+# =============================================================================
+# Drains pending `web_push` rows from public.notification_deliveries and sends
+# them as real browser push messages (ingestion/src/push-sender.js, using the
+# `web-push` library + VAPID). This is the delivery half of the push pipeline;
+# the fan-out (migration 030) is what creates the rows.
+#
+# ── GitHub SECRETS this workflow needs (Repo → Settings → Secrets and variables
+#    → Actions → New repository secret) ────────────────────────────────────────
+#   SUPABASE_URL                 Supabase project URL (https://<ref>.supabase.co)
+#   SUPABASE_SERVICE_ROLE_KEY    Service-role key (server-only; bypasses RLS)
+#   VAPID_PUBLIC_KEY             VAPID public key  — the SAME value already on
+#                                Vercel as NEXT_PUBLIC_VAPID_PUBLIC_KEY
+#   VAPID_PRIVATE_KEY            VAPID private key — the SAME value on Vercel
+#   VAPID_SUBJECT                A mailto: or https: contact, e.g.
+#                                mailto:nimunotifications@gmail.com  (required by spec)
+#   PUBLIC_SITE_URL              (OPTIONAL) web origin for click targets + icon,
+#                                no trailing slash. Defaults to
+#                                https://www.nimuhome.com.
+#
+#   The VAPID_* values MUST match the public key the browser subscribed with, or
+#   every push is rejected. Reuse the Vercel keys — do not generate new ones.
+#
+# The sender fails fast with a clear, names-only error if a required secret is
+# missing (see config.assertPushConfig). Secrets are never logged.
+# =============================================================================
+name: Send web push
+
+on:
+  schedule:
+    # Every 5 minutes (UTC). NOTE: `schedule` only fires once this file is on the
+    # repo's DEFAULT branch; GitHub also auto-disables crons after 60 days with no
+    # repo activity (re-enable in the Actions tab if that happens). Cron cadence is
+    # best-effort — GitHub may delay ticks under load.
+    - cron: '*/5 * * * *'
+  workflow_dispatch: {} # allow manual runs from the Actions tab
+
+permissions:
+  contents: read # least privilege — the job only reads the repo
+
+concurrency:
+  group: push-send # never let two send runs drain the outbox at once
+  cancel-in-progress: false
+
+jobs:
+  send:
+    # Dois carteiros para a mesma caixa: este cron e o `push-worker` da
+    # Supabase (pg_cron a cada minuto, `.github/workflows/push-worker.yml`)
+    # leem as mesmas entregas pendentes, e uma entrega lida pelos dois ao mesmo
+    # tempo podia sair duas vezes. Também é um subcontratante a mais (o GitHub
+    # vê endpoints e chaves de push). Quando o push-worker estiver publicado e
+    # a responder, pôr a variável do repositório PUSH_WORKER_ACTIVE = true
+    # (Settings → Secrets and variables → Actions → Variables) e este job
+    # deixa de correr — auditoria independente de 2026-10, F10.
+    if: ${{ vars.PUSH_WORKER_ACTIVE != 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: ingestion/package-lock.json
+
+      - name: Install dependencies
+        working-directory: ingestion
+        run: npm ci
+
+      - name: Send pending web push
+        working-directory: ingestion
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          VAPID_PUBLIC_KEY: ${{ secrets.VAPID_PUBLIC_KEY }}
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+          VAPID_SUBJECT: ${{ secrets.VAPID_SUBJECT }}
+          # Optional: unset falls back to https://www.nimuhome.com inside
+          # push-sender.js (see the SITE_URL comment there).
+          PUBLIC_SITE_URL: ${{ secrets.PUBLIC_SITE_URL }}
+        run: npm run push:send

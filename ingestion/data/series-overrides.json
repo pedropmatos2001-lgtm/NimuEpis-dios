@@ -1,0 +1,13 @@
+{
+  "_leia-me": "Exceções à chave de série (src/series-plan.js). Um nó é a rota do AnimeSchedule ('solo-leveling') ou 'mal:52299'. 'join': junta os nós numa série (mesmo um que a regra deixa de fora, como um especial). 'cut': corta a relação entre os dois nós dados (cada lado fica na sua série). 'split': tira o nó de qualquer série (fica ficha solta). 'approve': uma série com mais de 12 membros, revista e aprovada (um membro qualquer). 'title': o nome da série que tem esse nó. 'season': temporada (e parte) forçada para esse nó. Escreve sempre o 'why', para quem vier depois. Depois de mudar, corre 'node src/series.js --plan' e confere.",
+  "join": [],
+  "cut": [
+    { "refs": ["handa-kun", "barakamon"], "why": "Handa-kun é uma prequela derivada, com outro protagonista e outro título; não é a temporada 0 do Barakamon." },
+    { "refs": ["inuyasha-kanketsu-hen", "hanyou-no-yashahime-sengoku-otogizoushi"], "why": "Yashahime é uma série nova (outras protagonistas, outro nome); as duas partes dela ficam juntas, sem o InuYasha." },
+    { "refs": ["zero-kara-hajimeru-mahou-no-sho", "mahoutsukai-reimeiki"], "why": "The Dawn of the Witch é outra série, passada no mesmo mundo, com outro protagonista." }
+  ],
+  "split": [],
+  "approve": [],
+  "title": [],
+  "season": []
+}

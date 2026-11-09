@@ -1,0 +1,10 @@
+{
+  "_leia-me": "Exceções à classificação de videoclipes e PV (src/extras.js). 'keep': nunca é extra, mesmo que a regra diga que sim (e uma linha já marcada volta ao formato do manami). 'extra': é sempre extra, com o tipo dado ('Music' ou 'PV'). A chave é o mal_id. Escreve sempre o título e o porquê, para quem vier depois.",
+  "keep": [
+    { "mal": 2385, "title": "One Piece: Jango no Dance Carnival", "why": "Curta de 6 min que passou com o filme 2 do One Piece; uma história, não um videoclipe." },
+    { "mal": 6361, "title": "ef: A Tale of Memories. - Prologue", "why": "Prólogo da série, com história; a etiqueta 'music' vem da canção." },
+    { "mal": 6401, "title": "ef: A Tale of Melodies. - Prologue", "why": "Prólogo da série, com história; a etiqueta 'music' vem da canção." },
+    { "mal": 10122, "title": "Kowarekake no Orgel Special", "why": "Episódio especial do OVA, com história; 8 min." }
+  ],
+  "extra": []
+}

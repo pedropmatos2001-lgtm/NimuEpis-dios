@@ -1,0 +1,345 @@
+{
+  "_comment": "Amostras (2026-11-01) com a forma documentada de cada fonte, para os testes do filtro 18+ (adult-content.js). Os títulos e ids são os reais dos casos que entraram no catálogo em 2026-08; os excertos estão reduzidos ao que o filtro lê. Onde o teste é de um mecanismo (ids, título no manami) e não da lista à mão, usam-se nomes inventados ('Hypnosis Girlfriend', 'Kokuhaku The Animation'), porque os títulos reais já estão em KNOWN_ADULT_TITLES.",
+  "anilist": {
+    "adult": {
+      "id": 999001,
+      "title": {
+        "romaji": "Kanojo Saimin"
+      },
+      "isAdult": true,
+      "genres": [
+        "Hentai"
+      ]
+    },
+    "ecchi": {
+      "id": 999002,
+      "title": {
+        "romaji": "Ecchi Comedy"
+      },
+      "isAdult": false,
+      "genres": [
+        "Comedy",
+        "Ecchi"
+      ]
+    }
+  },
+  "jikan": {
+    "hentai": {
+      "mal_id": 64529,
+      "title": "NTR Kishi",
+      "rating": "Rx - Hentai",
+      "genres": [
+        {
+          "name": "Fantasy"
+        },
+        {
+          "name": "Hentai"
+        }
+      ]
+    },
+    "mildNudity": {
+      "mal_id": 63468,
+      "title": "Ushiro no Shoumen Kamui-san",
+      "rating": "R+ - Mild Nudity",
+      "genres": [
+        {
+          "name": "Comedy"
+        },
+        {
+          "name": "Supernatural"
+        }
+      ]
+    },
+    "violent": {
+      "mal_id": 1,
+      "title": "Seinen Violento",
+      "rating": "R - 17+ (violence & profanity)",
+      "genres": [
+        {
+          "name": "Action"
+        }
+      ]
+    }
+  },
+  "tmdb": {
+    "adult": {
+      "id": 320889,
+      "name": "Harem-tou e Youkoso!",
+      "adult": true,
+      "poster_path": "/a.jpg"
+    },
+    "clean": {
+      "id": 1,
+      "name": "Frieren",
+      "adult": false,
+      "poster_path": "/b.jpg"
+    }
+  },
+  "animescheduleTimetable": [
+    {
+      "title": "Pure x Holic",
+      "route": "pure-x-holic-junketsu-otome-to-kon-in-kankei-the-animation",
+      "romaji": "Pure x Holic: Junketsu Otome to Kon'in Kankei!? The Animation",
+      "episodeNumber": 1,
+      "episodeDate": "2026-08-28T15:00:00Z"
+    },
+    {
+      "title": "My Classmate's a Sexy Actress",
+      "route": "onaji-semi-no-someya-san-ga-sexy-joyuu-datta-hanashi",
+      "english": "My Classmate's a Sexy Actress, and Now We Live Together?!",
+      "episodeNumber": 5,
+      "episodeDate": "2026-08-09T15:00:00Z"
+    },
+    {
+      "title": "Harem-tou e Youkoso!",
+      "route": "harem-tou-e-youkoso",
+      "romaji": "Harem-tou e Youkoso!",
+      "episodeNumber": 1,
+      "episodeDate": "2026-07-31T15:00:00Z"
+    },
+    {
+      "title": "Kokuhaku The Animation",
+      "route": "kokuhaku-the-animation",
+      "romaji": "Kokuhaku The Animation",
+      "episodeNumber": 1,
+      "episodeDate": "2026-08-14T15:00:00Z"
+    },
+    {
+      "title": "Hypnosis Girlfriend",
+      "route": "hypnosis-girlfriend",
+      "romaji": "Hypnosis Girlfriend",
+      "episodeNumber": 2,
+      "episodeDate": "2026-08-28T15:00:00Z"
+    },
+    {
+      "title": "Perfect Addiction",
+      "route": "perfect-addiction",
+      "romaji": "Perfect Addiction",
+      "episodeNumber": 9,
+      "episodeDate": "2026-09-01T15:00:00Z"
+    },
+    {
+      "title": "Akira",
+      "route": "akira",
+      "romaji": "Akira",
+      "episodeNumber": 1,
+      "episodeDate": "2026-09-01T15:00:00Z"
+    },
+    {
+      "title": "Ecchi Show",
+      "route": "ecchi-show",
+      "romaji": "Ecchi Show",
+      "episodeNumber": 3,
+      "episodeDate": "2026-09-01T15:00:00Z"
+    }
+  ],
+  "animescheduleDetails": {
+    "pure-x-holic-junketsu-otome-to-kon-in-kankei-the-animation": {
+      "route": "pure-x-holic-junketsu-otome-to-kon-in-kankei-the-animation",
+      "names": {
+        "romaji": "Pure x Holic: Junketsu Otome to Kon'in Kankei!? The Animation"
+      },
+      "genres": [
+        {
+          "name": "Fantasy",
+          "route": "fantasy"
+        },
+        {
+          "name": "Hentai",
+          "route": "hentai"
+        }
+      ],
+      "websites": {}
+    },
+    "onaji-semi-no-someya-san-ga-sexy-joyuu-datta-hanashi": {
+      "route": "onaji-semi-no-someya-san-ga-sexy-joyuu-datta-hanashi",
+      "names": {
+        "english": "My Classmate's a Sexy Actress, and Now We Live Together?!"
+      },
+      "genres": [
+        {
+          "name": "Romance",
+          "route": "romance"
+        }
+      ],
+      "websites": {
+        "mal": "myanimelist.net/anime/63619"
+      }
+    },
+    "perfect-addiction": {
+      "route": "perfect-addiction",
+      "names": {
+        "romaji": "Perfect Addiction"
+      },
+      "genres": [
+        {
+          "name": "Boys Love",
+          "route": "boys-love"
+        },
+        {
+          "name": "Romance",
+          "route": "romance"
+        }
+      ],
+      "websites": {
+        "mal": "myanimelist.net/anime/63514"
+      }
+    },
+    "ecchi-show": {
+      "route": "ecchi-show",
+      "names": {
+        "romaji": "Ecchi Show"
+      },
+      "genres": [
+        {
+          "name": "Comedy",
+          "route": "comedy"
+        },
+        {
+          "name": "Ecchi",
+          "route": "ecchi"
+        }
+      ],
+      "websites": {}
+    },
+    "hypnosis-girlfriend": {
+      "route": "hypnosis-girlfriend",
+      "names": {
+        "romaji": "Hypnosis Girlfriend"
+      },
+      "genres": [],
+      "websites": {
+        "mal": "myanimelist.net/anime/64531"
+      }
+    }
+  },
+  "manami": [
+    {
+      "sources": [
+        "https://myanimelist.net/anime/64531"
+      ],
+      "title": "Kanojo Saimin",
+      "type": "OVA",
+      "synonyms": [],
+      "tags": [
+        "hentai"
+      ]
+    },
+    {
+      "sources": [
+        "https://myanimelist.net/anime/63619"
+      ],
+      "title": "Onaji Semi no Someya-san ga Sexy Joyuu datta Hanashi.",
+      "type": "ONA",
+      "synonyms": [
+        "My Classmate's a Sexy Actress, and Now We Live Together?!"
+      ],
+      "tags": [
+        "erotica"
+      ]
+    },
+    {
+      "sources": [],
+      "title": "My Classmate's a Sexy Actress, and Now We Live Together?!",
+      "type": "TV",
+      "synonyms": [],
+      "tags": []
+    },
+    {
+      "sources": [],
+      "title": "Sare Tsuma wa Ubawaretai",
+      "type": "OVA",
+      "synonyms": [],
+      "tags": [
+        "adult audience only",
+        "hentai"
+      ]
+    },
+    {
+      "sources": [
+        "https://myanimelist.net/anime/63514"
+      ],
+      "title": "Perfect Addiction",
+      "type": "TV",
+      "synonyms": [],
+      "tags": [
+        "boys love",
+        "eroticism",
+        "romance"
+      ]
+    },
+    {
+      "sources": [
+        "https://myanimelist.net/anime/47"
+      ],
+      "title": "Akira",
+      "type": "MOVIE",
+      "synonyms": [],
+      "tags": [
+        "action",
+        "sci-fi"
+      ]
+    },
+    {
+      "sources": [
+        "https://myanimelist.net/anime/9999"
+      ],
+      "title": "Yuuwaku Countdown: Akira",
+      "type": "OVA",
+      "synonyms": [
+        "Akira"
+      ],
+      "tags": [
+        "hentai"
+      ]
+    },
+    {
+      "sources": [
+        "https://myanimelist.net/anime/2001"
+      ],
+      "title": "Afro Samurai: Resurrection",
+      "type": "MOVIE",
+      "synonyms": [],
+      "tags": [
+        "action",
+        "adult audience only"
+      ]
+    },
+    {
+      "sources": [
+        "https://myanimelist.net/anime/2002"
+      ],
+      "title": "91 Days",
+      "type": "TV",
+      "synonyms": [],
+      "tags": [
+        "drama",
+        "pornography"
+      ]
+    },
+    {
+      "sources": [
+        "https://myanimelist.net/anime/63468"
+      ],
+      "title": "Ushiro no Shoumen Kamui-san",
+      "type": "TV",
+      "synonyms": [
+        "KAMUI: He's Behind You"
+      ],
+      "tags": [
+        "comedy",
+        "erotica",
+        "supernatural"
+      ]
+    },
+    {
+      "sources": [],
+      "title": "Kokuhaku The Animation",
+      "type": "OVA",
+      "synonyms": [],
+      "tags": [
+        "hentai"
+      ]
+    }
+  ]
+}

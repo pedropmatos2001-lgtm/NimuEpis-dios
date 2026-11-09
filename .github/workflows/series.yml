@@ -1,0 +1,136 @@
+name: Chave de serie (plano)
+
+# Corre SO a pedido (Actions -> "Chave de serie (plano)" -> Run workflow).
+#
+# PORQUE EXISTE
+#
+# Fase 4 do plano "fichas por serie": o Solo Leveling S1 e S2 sao duas fichas
+# sem nada que as ligue. `ingestion/src/series.js` calcula as series (as
+# relacoes sequela/prequela do AnimeSchedule entre fichas TV, ONA e TV Short)
+# e, so com --aplicar, escreve a tabela `series` e as colunas `animes.series_*`
+# (migracao 20261105000200_series.sql). Nada disto muda o site: a web so as
+# vai ler na fase 5.
+#
+# COMO SE USA
+#
+#  1. O plano (o que vem por omissao): `confirmar` vazio. So leituras, com a
+#     chave PUBLICAVEL; corre em qualquer ramo. O relatorio (resumo.txt com as
+#     50 series mais seguidas, revisao.txt com as series que ficam para
+#     revisao, e o plano.json completo) fica nos artefactos da corrida. O dono reve as 50 mais seguidas e as sinalizadas, e corrige
+#     `ingestion/data/series-overrides.json` se for preciso.
+#  2. Aplicar a migracao 20261105000200_series.sql.
+#  3. A escrita: `confirmar` = SIM, so no ramo main, com a service role que a
+#     ingestao ja usa. Por omissao escreve SO as series seguras: as que tem
+#     uma ponte (um filme ou OVA pelo meio), um membro que pode ser derivado ou
+#     mais de 12 membros ficam fichas soltas ate o dono as aprovar
+#     (`approve` em series-overrides.json) ou marcar `incluir_duvidosos`.
+#     Escreve uma linha de cada vez, so o que muda; a segunda corrida seguida
+#     nao escreve nada.
+#
+# Partilha o grupo de `concurrency` da ingestao (o mesmo token do AnimeSchedule):
+# enquanto corre, a ingestao de 6 em 6 horas espera, e vice-versa. Na base, o
+# plano faz ~60 leituras paginadas, uma de cada vez.
+#
+# Nunca imprime segredos. Nunca toca em listas, episodios nem avisos.
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirmar:
+        description: 'Escrever na base: escrever SIM (vazio = so o plano)'
+        type: string
+        default: ''
+      incluir_duvidosos:
+        description: 'Com SIM: escrever tambem as series para revisao (ponte, derivado?). Desligado = so as seguras'
+        type: boolean
+        default: false
+      sem_cache:
+        description: 'Voltar a ler o catalogo do AnimeSchedule mesmo com cache de menos de 7 dias'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ingest
+  cancel-in-progress: false
+
+jobs:
+  series:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: So o main escreve
+        if: ${{ inputs.confirmar == 'SIM' && github.ref != 'refs/heads/main' }}
+        run: |
+          echo "::error::A escrita (confirmar=SIM) so corre no ramo main. Este e ${GITHUB_REF}."
+          exit 1
+
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: ingestion/package-lock.json
+
+      - name: Install dependencies
+        working-directory: ingestion
+        run: npm ci
+
+      - name: Run tests
+        working-directory: ingestion
+        run: npm test
+
+      - name: Restaurar a cache do AnimeSchedule
+        uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: ingestion/.cache/as-relacoes.json
+          key: series-as-${{ github.run_id }}
+          restore-keys: series-as-
+
+      - name: Plano (so leituras, chave publicavel)
+        if: ${{ inputs.confirmar != 'SIM' }}
+        working-directory: ingestion
+        timeout-minutes: 35
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          # A chave publicavel e publica por desenho (vai no JavaScript do site).
+          SUPABASE_ANON_KEY: sb_publishable_BazWym41UH0ZKJsJlLDp4w_WmhCjgdK
+          ANIMESCHEDULE_TOKEN: ${{ secrets.ANIMESCHEDULE_TOKEN }}
+          SEM_CACHE: ${{ inputs.sem_cache && '--sem-cache' || '' }}
+        run: |
+          mkdir -p ../series-plano
+          set -o pipefail
+          node src/series.js --plan --json=../series-plano/plano.json $SEM_CACHE | tee ../series-plano/resumo.txt
+
+      - name: Escrever (service role)
+        if: ${{ inputs.confirmar == 'SIM' && github.ref == 'refs/heads/main' }}
+        working-directory: ingestion
+        timeout-minutes: 35
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          ANIMESCHEDULE_TOKEN: ${{ secrets.ANIMESCHEDULE_TOKEN }}
+          INCLUIR: ${{ inputs.incluir_duvidosos && '--incluir-duvidosos' || '' }}
+        run: |
+          mkdir -p ../series-plano
+          set -o pipefail
+          node src/series.js --aplicar $INCLUIR --json=../series-plano/plano.json | tee ../series-plano/resumo.txt
+
+      - name: Guardar a cache do AnimeSchedule
+        if: always()
+        uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: ingestion/.cache/as-relacoes.json
+          key: series-as-${{ github.run_id }}
+
+      - name: Relatorio
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: series-plano
+          path: series-plano/
+          if-no-files-found: ignore
+          retention-days: 30

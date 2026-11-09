@@ -1,0 +1,7 @@
+# Local secrets — never commit.
+.env
+
+# Weekly manami anime-offline-database download cache (~tens of MB).
+.cache/
+
+node_modules/
