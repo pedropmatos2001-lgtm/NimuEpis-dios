@@ -17,7 +17,7 @@ recolha de dados, mais os poucos ficheiros partilhados de que ele precisa
 Tudo o que é sensível está em **Settings → Secrets and variables → Actions**
 e nunca aparece no código nem nos registos:
 
-`SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`, `ANIMESCHEDULE_TOKEN`,
+`SUPABASE_URL`, `SUPABASE_SECRET_KEY` (a chave secreta `sb_secret_...` ou a service_role), `ANIMESCHEDULE_TOKEN`,
 `TVDB_API_KEY`, `TMDB_API_KEY`, `VAPID_PUBLIC_KEY`, `VAPID_PRIVATE_KEY`,
 `VAPID_SUBJECT`, `PUBLIC_SITE_URL`.
 

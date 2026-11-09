@@ -111,7 +111,7 @@ jobs:
         timeout-minutes: 35
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
           ANIMESCHEDULE_TOKEN: ${{ secrets.ANIMESCHEDULE_TOKEN }}
           INCLUIR: ${{ inputs.incluir_duvidosos && '--incluir-duvidosos' || '' }}
         run: |
